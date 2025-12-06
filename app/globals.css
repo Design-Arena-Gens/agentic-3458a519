@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  min-height: 100vh;
+  background-image: radial-gradient(circle at 20% 20%, rgba(99, 102, 241, 0.2), transparent 45%),
+    radial-gradient(circle at 80% 10%, rgba(236, 72, 153, 0.15), transparent 35%),
+    radial-gradient(circle at 50% 75%, rgba(16, 185, 129, 0.05), transparent 50%);
+}
+
+.glass {
+  @apply bg-white/10 backdrop-blur-2xl border border-white/10 shadow-soft;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-300 via-primary-500 to-purple-400;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.4);
+  border-radius: 9999px;
+}
